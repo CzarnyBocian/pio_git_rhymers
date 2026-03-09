@@ -1,0 +1,21 @@
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse (dodajemy dla zasady, bo instrukcja o nim wspomina)
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# Systemowe
+.DS_Store
+Thumbs.db
