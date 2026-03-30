@@ -28,6 +28,7 @@ public class RhymersJUnitTest {
         Assert.assertEquals(false, result);
     }
 
+    // TODO: needs refactoring - warto uproscic te petle i usunac wpisana na sztywno magiczne liczby (przykladowo liczba 888)
     @Test
     public void testIsFull() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
