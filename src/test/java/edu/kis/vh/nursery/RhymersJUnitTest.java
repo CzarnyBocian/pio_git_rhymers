@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+// Projekt jest poprawny, wszystkie testy przechodzą pomyślnie.
 public class RhymersJUnitTest {
 
     @Test
@@ -27,6 +28,7 @@ public class RhymersJUnitTest {
         Assert.assertEquals(false, result);
     }
 
+    // TODO: needs refactoring - warto uproscic te petle i usunac wpisana na sztywno magiczne liczby (przykladowo liczba 888)
     @Test
     public void testIsFull() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
@@ -75,4 +77,16 @@ public class RhymersJUnitTest {
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
 
+    @Test
+    public void testFIFORhymer() {
+        FIFORhymer rhymer = new FIFORhymer();
+
+        rhymer.countIn(1);
+        rhymer.countIn(2);
+        rhymer.countIn(3);
+
+        Assert.assertEquals(1, rhymer.countOut());
+        Assert.assertEquals(2, rhymer.countOut());
+        Assert.assertEquals(3, rhymer.countOut());
+    }
 }
